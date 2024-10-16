@@ -184,15 +184,15 @@ message: Isi Permintaan Kamu
   </pre>
 
 <span class="section__subtitle">05</span>
-<h2>Implemetasi</h2>
-<p>Berikut Merupakan Contoh implementasi Dalam Bentuk Case :</p>
+<h2>Implementasi</h2>
+<p>Berikut merupakan contoh implementasi dalam bentuk case :</p>
 
 <pre id="codeBlock">
-case 'ai4': {
-if (!q) return reply(`🍂 *Mau Nanya Apa Sama Ai4Chat?*`)
+case 'luminai': {
+if (!q) return reply(`🍂 *Mau Nanya Apa Sama luminai?*`)
 if (text.length > 500) return lenwyreply(`🍂 *Maksimal 500 Karakter*`)
-lenwyreply('🍂 *Sabar Yaa*')
-var apeai = await fetchJson(`https://api-ape.vercel.app/ai4chat?text=${q}`)
+reply('🍂 *Sabar Yaa*')
+var apeai = await fetchJson(`https://api-ape.vercel.app/luminai?text=${q}`)
 var lenai = apeai.data
 await reply(lenai)
 }
