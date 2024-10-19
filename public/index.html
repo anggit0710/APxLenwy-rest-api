@@ -14,7 +14,7 @@
 
   <!-- Popup -->
   <div id="popup-backdrop" class="popup-backdrop"></div>
-  <div id="popup" class="popup">
+  <div id="popup" class="popup bordered-wrapper">
     <h2>Selamat Datang Di APe API!</h2>
     <p>APe API Merupakan Sebuah Website REST API Gratis Yang Tidak Memungut Biaya Sama Sekali, Saya Akan Senang Bila Anda Berniat Untuk Berpartisipasi Dalam Kemajuan Website Ini, Terimakasih :D </p>
     <div class="popup-buttons">
@@ -29,24 +29,22 @@
 <body>
 <div class="container">
   <h1>APe API</h1>
-  <p>Hi, APe API Merupakan Sebuah Website Yang Menyediakan REST API Gratis</p>
-  
   <span class="section__subtitle">01</span>
-  <h2 class="centered-title">Informasi</h2>
-  <div class="work__card mix apps sites">
-    <h3 class="work__title"><b>Waktu</b></h3>
-    <div class="h3 mb-0 font-weight-bold" id="jam"></div>
-    <br>
-    <h3 class="work__title"><b>Tanggal</b></h3>
+  <div class="bordered-wrapper">
+  <h2 class="centered-title">INFORMASI</h2>
+    <p>"Website REST API ini masih dalam tahap pengembangan . Dan saat ini fitur yang tersedia masih sedikit. Mohon maklumi segala kekurangan yang ada.
+    
+<p>Terima kasih :)</p></p>
     <div class="h5 mb-0 font-weight-bold" id="tanggal"></div>
     <br>
   </div>
-
+</div>
   <span class="section__subtitle">02</span>
-  <h2 class="centered-title">Daftar REST API</h2>
+  <div class="bordered-wrapper">
+<h2 class="centered-title">LIST ENDPOINT</h2>
   
   <!-- Folder AI -->
-  <div class="folder" onclick="toggleFolder('folder1', this)">
+  <div class="folder bordered-info" onclick="toggleFolder('folder1', this)">
     <h3 class="folder-title">Ai</h3>
     <span class="icon">▶</span>
   </div>
@@ -79,7 +77,7 @@
 </div>
 
    <!-- Folder Berita -->
-   <div class="folder" onclick="toggleFolder('folder2', this)">
+   <div class="folder bordered-info" onclick="toggleFolder('folder2', this)">
     <h3 class="folder-title">Berita</h3>
     <span class="icon">▶</span>
   </div>
@@ -98,7 +96,7 @@
     </div> 
 
   <!-- Folder Downloader -->
-      <div class="folder" onclick="toggleFolder('folder3', this)">
+      <div class="folder bordered-info" onclick="toggleFolder('folder3', this)">
     <h3 class="folder-title">Downloader</h3>
     <span class="icon">▶</span>
   </div>
@@ -116,7 +114,7 @@
     </div>
 
     <!-- Folder Search -->
-    <div class="folder" onclick="toggleFolder('folder4', this)">
+    <div class="folder bordered-info" onclick="toggleFolder('folder4', this)">
       <h3 class="folder-title">Search</h3>
       <span class="icon">▶</span>
     </div>
@@ -154,19 +152,22 @@
             <span class="desc-endpoint">Cari Informasi Tafsir Dari Ypia</span>
             <a href="/ypia?search=" class="btn-link">Try</a>
           </div>
-
+          
+        </div>
         </div>
       </div>
 
       <!-- Full Kode Di Github Saya : https://github.com/Lenwyy/ -->
 
- <span class="section__subtitle">03</span>    
+ <span class="section__subtitle">03</span>    <div class="bordered-wrapper">
  <h2>Penggunaan</h2>
   <p>Untuk Menggunakan End Point, Kirim Sebuah Permintaan GET kepada End Point yang Diinginkan Dengan Diikuti Parameter Berikut :</p>
   <ul>
     <pre>
+Parameter  => text 
 
-message: Isi Permintaan Kamu
+Contoh:
+https://contoh.com/luminai?text=
     </pre>
   </ul>
 
@@ -208,16 +209,22 @@ break
 <a href="https://sociabuzz.com/pangestu07/tribe" class="circle-button">
   <img src="https://widipe.com/file/1Kzkads4ziLz.png" alt="Icon" class="icon">
 </a>
-
+</div>
 <!-- https://widipe.com/file/1Kzkads4ziLz.png -->
 
 <span class="section__subtitle">06</span>
+<div class="bordered-wrapper">
 <h2>Informasi Tambahan</h2>
-<p>Website REST API Ini Masih Dalam Tahap Perkembangan (BETA), Mohon Untuk Memaklumi Segala Kekurangannya, Terimakasih :D</p>
+<p>Untuk mengetahui pembaruan fitur terbaru, kunjungi saluran kami di bawah ini: 
+
+<p><a href="https://whatsapp.com/channel/0029VaalShkGZNCsXgFPO80A" target="_blank">Saluran WhatsApp</a>.<p></p>
+
+</div>
   </div>
 </div>
 </div>
-
+ 
+   <span class="section__subtitle">07</span>
 <h6>Copyright © 2024 AP & Lenwy</h6>
 
 <script src="script.js"></script>
