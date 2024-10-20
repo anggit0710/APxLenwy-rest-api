@@ -25,6 +25,7 @@ require('./berita/liputan6')(app);
 
 // Import downloader 
 require('./downloader/Tiktokdl')(app);
+require('./downloader/Tiktokslide')(app);
 
 // Import Search
 require('./search/goodread')(app);
