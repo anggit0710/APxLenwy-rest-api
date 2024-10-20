@@ -23,6 +23,9 @@ require('./ai/Aianswer')(app);
 // Import Berita
 require('./berita/liputan6')(app);
 
+// Import downloader 
+require('./downloader/Tiktokdl')(app);
+
 // Import Search
 require('./search/goodread')(app);
 require('./search/ypia')(app);
