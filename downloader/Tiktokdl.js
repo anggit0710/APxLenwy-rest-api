@@ -116,7 +116,7 @@ app.get('/downloader/tiktokdl', async (req, res) => {
       const response = await tiktokDl(url);
       res.status(200).json({
         status: 200,
-        creator: "AP & Tanaka sensei",
+        creator: "AP & Tanaka sense",
         data: { response }
       });
     } catch (error) {
