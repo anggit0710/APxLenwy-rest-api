@@ -40,7 +40,7 @@ app.get('/aianswer', async (req, res) => {
       if (!text) {
         return res.status(400).json({ error: 'Parameter "text" Tidak Ditemukan, Tolong Masukkan Perintah' });
       }
-      const response = await aiAnswer(text);
+      const response = await aiAnswer.chat(text); // Panggil metode 'chat'
       res.status(200).json({
         status: 200,
         creator: "AP",
