@@ -1,10 +1,11 @@
 const axios = require('axios');
-
-module.exports = function(app) {
-	
+
 function generateRandomRid() {
     return Math.random().toString(36).substring(2, 15);
 }
+
+module.exports = function(app) {
+	
 async function leptonLlm(query) {
     const url = 'https://search.lepton.run/api/query';
     const rid = generateRandomRid();
