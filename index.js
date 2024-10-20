@@ -18,6 +18,7 @@ app.use(cors());
 require('./ai/Blackbox')(app);
 require('./ai/LuminAI')(app);
 require('./ai/Leptonai')(app);
+require('./ai/Aianswer')(app);
 
 // Import Berita
 require('./berita/liputan6')(app);
