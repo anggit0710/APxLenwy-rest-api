@@ -109,11 +109,11 @@ async function tiktokDl(url) {
 // Endpoint untuk tiktokDl
 app.get('/tiktokdl', async (req, res) => {
     try {
-      const text = req.query.text;
-      if (!text) {
-        return res.status(400).json({ error: 'Parameter "text" tidak ditemukan' });
+      const url = req.query.url;
+      if (!url) {
+        return res.status(400).json({ error: 'Parameter "url" tidak ditemukan' });
       }
-      const response = await tiktokDl(text);
+      const response = await tiktokDl(url);
       res.status(200).json({
         status: 200,
         creator: "AP",
