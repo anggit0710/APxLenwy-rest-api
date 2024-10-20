@@ -16,7 +16,17 @@ const aiAnswer = {
           }
         }
       );
-      
+      return response.data; // Hanya mengembalikan data dari respons API
+    } catch (error) {
+      return {
+        status: 'error',
+        code: error.response ? error.response.status : 500,
+        message: error.message
+      };
+    }
+  }
+};
+
 // Endpoint Aianswer
 app.get('/aianswer', async (req, res) => {
     try {
