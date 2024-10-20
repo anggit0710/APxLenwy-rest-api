@@ -107,7 +107,7 @@ async function tiktokDl(url) {
 }
 
 // Endpoint untuk tiktokDl
-app.get('/tiktokdl', async (req, res) => {
+app.get('/downloader/tiktokdl', async (req, res) => {
     try {
       const url = req.query.url;
       if (!url) {
@@ -116,7 +116,7 @@ app.get('/tiktokdl', async (req, res) => {
       const response = await tiktokDl(url);
       res.status(200).json({
         status: 200,
-        creator: "AP",
+        creator: "AP & Tanaka sensei",
         data: { response }
       });
     } catch (error) {
