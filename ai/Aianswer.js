@@ -16,15 +16,9 @@ const aiAnswer = {
           }
         }
       );
-      return {
-        creator: 'Daffa ~',
-        status: 'success',
-        code: 200,
-        data: response.data
-      };
+      return response.data; // Hanya mengembalikan data dari respons API
     } catch (error) {
       return {
-        creator: 'Daffa ~',
         status: 'error',
         code: error.response ? error.response.status : 500,
         message: error.message
