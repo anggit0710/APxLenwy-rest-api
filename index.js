@@ -26,12 +26,15 @@ require('./berita/liputan6')(app);
 // Import downloader 
 require('./downloader/Tiktokdl')(app);
 
+// Import islamic
+require('./islamic/ypia')(app);
+require('./islamic/rumaysho')(app);
+require('./islamic/surah')(app);
+require('./islamic/jadwalsholat')(app);
+
 // Import Search
 require('./search/goodread')(app);
-require('./search/ypia')(app);
-require('./search/rumaysho')(app);
-require('./search/surah')(app);
-require('./search/jadwalsholat')(app);
+
 
 // Full Kode Di Github Saya : https://github.com/Lenwyy/
 
