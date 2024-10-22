@@ -17,7 +17,6 @@ app.use(cors());
 // Import AI
 require('./ai/Blackbox')(app);
 require('./ai/LuminAI')(app);
-require('./ai/Leptonai')(app);
 require('./ai/Aianswer')(app);
 
 // Import Berita
@@ -34,6 +33,11 @@ require('./islamic/jadwalsholat')(app);
 
 // Import Search
 require('./search/goodread')(app);
+require('./search/Footballdata')(app);
+require('./search/Liga')(app);
+
+//import Tools
+require('./tools/Pastebin')(app);
 
 
 // Full Kode Di Github Saya : https://github.com/Lenwyy/
