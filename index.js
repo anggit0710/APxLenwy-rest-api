@@ -34,10 +34,10 @@ require('./islamic/jadwalsholat')(app);
 // Import Search
 require('./search/goodread')(app);
 require('./search/Footballdata')(app);
-require('./search/Liga')(app);
+
 
 //import Tools
-require('./tools/Pastebin')(app);
+require('./tools/ttstalk')(app);
 
 
 // Full Kode Di Github Saya : https://github.com/Lenwyy/
